@@ -1,0 +1,1024 @@
+*{padding: 0;margin: 0;}
+.section-1{
+    background: #d2d2d2;
+    padding: 0px 0px;
+    position: relative;
+}
+.section-1::before{
+    content: "";
+    background: white;
+    width: 27%;
+    height: 102%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 96% 0, 100% 100%, 0% 100%);
+    border-radius: 0px 29px 0px 0px;
+    z-index: 1;
+}
+
+.logo_sec{
+    float:left;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 2;
+}
+.section-1 .sec-1-text p{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+}
+.section-1 .sec-1-text p span{
+    
+}
+.section-1 .sec-1-text .btn{
+    background: #123981;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 4px 28px;
+}
+/*-------------navigationbar-------*/
+.bottom-heading{}
+.bottom-heading img{
+    width: 42%;
+}
+.bottom-heading ul{}
+.bottom-heading ul li{
+    margin-right: 80px;
+}
+.bottom-heading2 ul li{
+    margin-right: 15px;
+}
+
+/*--------profile------*/
+.profile-wrap{
+    display: flex;
+    align-items: center;
+    width: 16%;
+    text-align: right;
+    justify-content: flex-end;
+}
+.profile-wrap .name{
+    width: 100%;
+}
+
+.profile-wrap .name a{
+    text-decoration: none;
+}
+
+
+.profile-wrap .name p{
+    margin: 0;
+    width: 100%;
+    background: #babef3;
+    color: #a80404;
+    border-radius: 7px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.profile-wrap .profile-photo{
+    width: 100px;
+    height: 100px;
+}
+.profile-wrap .profile-photo img{
+    width: 100px;
+    border-radius: 50%;
+    height: 80px;
+}
+.profile-wrap .messenger{}
+.profile-wrap .messenger a{}
+.profile-wrap .messenger a i{font-size: 33px;color: #727cff;}
+.profile-wrap .notification{}
+.profile-wrap .notification i{
+    font-size: 33px;
+    color: #727cff;
+    margin-left: 16px;
+}
+
+/*------------section-2------*/
+.section-2{
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+.section-2 .doc-image{
+    margin: 20px 0px;
+}
+.section-2 .doc-image img{
+    width: 100%;
+}
+.section-2 .hospital-des{}
+.section-2 .hospital-des h4{
+    font-weight: bold;
+    color: #373636;
+    font-size: 32px;
+    margin: 0;
+}
+.section-2 .hospital-des h1{
+    font-weight: bold;
+    color: #a80404;
+    font-size: 70px;
+    margin: 0;
+}
+.section-2 .hospital-des button{
+    border: none;
+    background: #454ec7;
+    padding: 13px 32px;
+    color: white;
+    font-weight: bold;
+    margin-right: 9px;
+    margin-top: 30px;
+    border-radius: 15px;
+    transition: all 0.2s;
+}
+.section-2 .hospital-des button:hover{
+   background: #d2d2d2;
+    color:#a80404; 
+}
+
+/*--------section-3-------*/
+.section-3{
+    
+/* position: relative; */
+    
+/* top: -80px; */
+    
+background: #eeeeee;
+}
+.search-wrap{
+    background: #fdfdfd;
+    padding: 20px 18px;
+    border-radius: 10px;
+    padding-bottom: 25px;
+    border: 2px solid #e8e7e7;
+    position: relative;
+    top: -80px;
+}
+.search-wrap h3{
+    text-align: center;
+    margin-bottom: 18px;
+}
+.search-wrap input{}
+
+
+.footer{
+    background: #d2d2d2;
+    position: relative;
+  margin-top: 300px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+}
+.footer p{
+    font-size: 18px;
+    margin: 0px;
+}
+.footer p strong{}
+
+--------------------------------
+/*---patient page 1 css-------*/
+.all-body-wrap{
+    background: #f3f1f1;
+    padding: 50px 0px;
+}
+.catagory-search{
+    background: white;
+    border-radius: 10px;
+    border:2px solid #d2d2d2;
+    margin-bottom: 5px;
+}
+.catagory-search select{
+    border: none;
+    position: relative;
+}
+
+.catagory-search select::before{
+   content: "";
+    background: red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.all-body-wrap .body-wrap{
+    background:white;
+    border-radius: 10px;
+    height: 600px;
+    padding: 15px 0px;
+}
+.all-body-wrap .body-wrap .catagory-location{}
+
+.all-body-wrap .body-wrap .hos-catagory-list{
+    background: #ffffff;
+}
+.all-body-wrap .body-wrap .hos-catagory-list .nav{}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item{
+    padding: 0% 4%;
+    position: relative;
+    margin: 0px 42px;
+}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item a{}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul{list-style: none;padding: 0;}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li{
+    position: relative;
+}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    /* margin: 8px 0px; */
+    text-align: center;
+    padding: 7px 0px;
+}
+.list{
+    height: 400px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background: #babef3;
+}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li .list-2{
+    position: absolute;
+    top: 0;
+    background: #777777;
+    /* padding: 10px; */
+    z-index: 11;
+    left: 100%;
+    width: 185px;
+    display: none;
+}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li:hover .list-2{
+    display: block !important;
+}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li:hover .list-3{
+    display: block !important;
+}
+
+
+
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li:hover{
+    background: #70c395;
+}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li .list-2 ul li:hover{
+    border-left: 5px solid red;
+    
+}
+
+
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li ul{}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li ul li{}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li ul li a{}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li .list-3{
+    position: absolute;
+    top: -14px;
+    background: white;
+    left: 84%;
+    z-index: 1;
+    width: 400px;
+    border-radius: 9px;
+    padding-top: 50px;
+    display: none;
+}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li .list-3 .list-3-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li .list-3 .list-3-btn button{
+    border: none;
+    margin: 9px;
+    width: 165px;
+    color: black;
+    background: no-repeat;
+    border: 2px solid #b5b5b5;
+    padding: 3px 10px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li .list-3 .list-3-btn button a{
+    color: #f565a1;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li .list-3 .list-3-btn button:hover{
+    background: #40ea40;
+    color: white;
+}
+
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li .list-3 .list-3-btn button a:hover{
+    color: white;
+}
+
+
+
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li .list-3 .list-3-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+.all-body-wrap .body-wrap .hos-catagory-list .nav .nav-item ul li .list-3 .list-3-text a{
+    color: #f565a1;
+    font-size: 14px;
+}
+
+.nav-item{
+    font-weight: bold;
+}
+/*-------------patient page -2--css----*/
+
+.patient-post-wrap{
+    background: #f3f1f1;
+    padding: 50px 0px;
+}
+.patient-post-left{
+    background: white;
+    border-radius: 10px;
+    height: 450px;
+}
+.patient-post-left .patient-post-left-text{
+    background: #babef3;
+    height: 100px;
+    margin: 18px;
+    text-align: center;
+    border-radius: 10px;
+}
+.patient-post-left .patient-post-left-text p{}
+.patient-post-left .patient-post-left-text p a{
+    color: #030392;
+    font-weight: bold;
+}
+.patient-post-left .patient-post-left-text p a{}
+.patient-post-middle{
+    height: 450px;
+    background: white;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.patient-post-middle h3{
+    
+text-align: center;
+    
+color: #030392;
+    
+border: 2px solid silver;
+    
+border-radius: 10px;
+    
+padding: 5px 0px;
+    
+margin-bottom: 30px;
+}
+
+
+
+
+.patient-img{
+    width: 100%;
+}
+.patient-img img{
+    width: 45px;
+    height: 45px;
+    background: #babef3;
+    padding: 5px;
+    border-radius: 50%;
+}
+.problem-type-select{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.problem-type{
+    display: flex;
+    align-items: center;
+}
+.problem-type p{
+    margin: 0px;
+    width: 179px;
+    color: #030392;
+    font-weight: bold;
+}
+.problem-type .form-floating{}
+.problem-type .form-floating select{}
+
+
+.gender-age{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.gender{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.gender p{
+    margin: 0;
+    margin-right: 8px;
+    font-weight: bold;
+}
+.gender p span{
+    color: #ec0303;
+    font-weight: bold;
+}
+.gender select{}
+.age{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+.age p{
+    margin: 0px;
+    margin-right: 8px;
+    font-weight: bold;
+}
+.age p span{
+    color: #a80404;
+    font-weight: bold;
+}
+.age p span input{}
+.post-btn{
+    text-align: right;
+}
+.post-btn input{
+    border: none;
+    background: #727cff;
+    color: white;
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.file-upload{
+    margin-top: 15px;
+}
+.file-upload input{}
+
+
+.patient-post-right{
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+    height: 450px;
+}
+.patient-post-right-text{
+    background: #babef3;
+    margin: 18px;
+    border-radius: 10px;
+}
+.patient-post-right-text p{
+    margin: 0px;
+    padding: 14px 0px;
+    font-weight: bold;
+}
+.patient-post-right-text p a{
+    text-decoration: none;
+    color: #030392;
+}
+
+
+/*----------patient-3 css--------*/
+.e-care-list-all-wrap{background: #f3f1f1;padding: 50px 0px;}
+.e-care-list{
+    background: #babef3;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.doctor-list-btn{
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.doctor-list-btn .doctor-btn{
+    background: #9ba2fd;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #030365;
+    font-weight: 500;
+}
+.doctor-list-btn .doctor-btn:hover{
+    background: #010177;
+    color: white;
+}
+
+
+
+
+.e-care-search{
+    background: white;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+.e-care-search input{
+    border: none;
+    background: transparent;
+}
+.e-care-search select{}
+.e-care-search .e-search{}
+.e-care-profile-list{
+}
+.e-care-profile{
+    background: white;
+    height: 180px;
+    padding: 16px;
+    margin: 12px;
+    position: relative;
+    border-radius: 10px;
+}
+.e-care-content{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+.e-care-content img{
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 50%;
+    background: #babef3;
+}
+.e-care-content p{
+    margin: 0px;
+}
+.e-care-content p span{
+    font-weight: bold;
+}
+
+
+.e-content-wrap{
+    margin-left: 20px;
+    
+}.e-care-content h4{
+    
+}
+.e-care-content-bottom{
+    width: 54%;
+    background: #9ba2fd;
+    text-align: center;
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 7px 0px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+.e-care-content-bottom p{
+    margin: 0px;
+}
+.e-care-content-bottom span{}
+
+.select-doctor{
+    background: white;
+    margin: 0px 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 3px solid #00000042;
+}
+.select-doctor p{
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+    color: #484545;
+}
+
+
+
+
+
+
+
+
+
+/*------E-care ctagory list--------*/
+
+
+.e-care-catagory-list{
+    background: white;
+    height: 397px;
+}
+
+.e-care-catagory-list h5{
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 2px solid #6f6e6e;
+    text-align: center;
+    padding: 10px;
+}
+.e-care-catagory-list ul{margin-top: 25px;}
+.e-care-catagory-list ul li{
+    padding: 5px 0px;
+}
+.e-care-catagory-list ul li a{
+    text-decoration: none;
+}
+
+
+
+
+.logo-relation{
+    position: relative;
+}
+.logo-wrap{
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 15%;
+}
+
+
+
+/*-------Hospital Details----------*/
+.hospital-details{
+    background: white;
+}
+.hospital-details-heading{
+    background: #631663;
+    color: white;
+    padding: 1px 10px;
+}
+.hospital-details-heading h1{}
+.hospital-all-details{
+    padding: 5px 10px;
+}
+.hospital-all-details ul{
+    list-style: none;
+    padding: 0;
+}
+.hospital-all-details ul li{}
+.hospital-all-details ul li a{display: flex;justify-content: space-between;text-decoration: none;font-weight: 500;}
+.hospital-all-details ul li a .arrow i,.arrow2 i{
+    
+background: #3131ed;
+    
+color: white;
+    
+padding: 4px;
+}
+
+.hospital-all-details ul li a p{
+    color: #464646;
+    font-weight: 400;
+}
+.hospital-all-details ul li a p .ratting{
+    color: #d2d200;
+}
+.hospital-all-details ul li a p .ratting-count{}
+
+
+/*------drop-box------*/
+
+.hospital-wrap{
+    position: relative;
+    transition: all 0.3s;
+}
+
+.drop-box,.drop-box-3{
+    position: absolute;
+    top: 0;
+    background: #fffefe;
+    border: 2px solid #9a9292;
+    left: 100%;
+            transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s;
+    padding: 20px 0px !important;
+    z-index: 111;
+    border-radius: 10px;
+}
+.drop-box li,.drop-box-3 li{
+    padding: 8px 18px;
+    transition: all 0.5s;
+}
+.drop-box li a,.drop-box-3 li a{
+    display: block !important;
+    color: #020277;
+}
+.drop-box li a span{}
+
+/*------hover Effect---------*/
+
+.hospital-wrap:hover{
+/*    border: 3px solid #631663;*/
+    border-radius: 10px;
+    outline: #4CAF50 solid 3px;
+    
+}
+
+.hospital-wrap:hover .drop-box{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.drop-box li:hover{
+
+}
+
+.drop-box li a:hover{
+
+    color: green!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------doctor details-----*/
+.doctor-details{
+    border-bottom: 4px solid #b3b3b3;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.3s;
+}
+.arrow2{
+    
+margin-right: 40px;
+}
+
+
+/*-----doctor-details-drop-box--------*/
+
+.drop-box-2{
+    background: #77e3ee;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 120%;
+    border-radius: 15px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s;
+    z-index: 1111;
+}
+.doctor-details-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.drop-box-2-doctor-img{}
+.drop-box-2-doctor-img img{
+    width: 60px;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.drop-box-2-content{
+    margin-left: 25px;
+}
+.drop-box-2-content p{}
+.drop-box-2-content p{}
+.drop-box-2-content .name{}
+.drop-box-2-content .degree{}
+.drop-box-2-content .degree{}
+.drop-box-2-content .speciality{}
+.chember-details{
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.chember-details .chember-heading{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 1px solid #8d8d8d;
+}
+.chember-details .chember-time{}
+.chember-details .chember-time .time{
+    display: flex;
+    justify-content: space-between;
+}
+.chember-details .chember-time .time span{}
+
+.apiontment-details{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* align-content: center; */
+}
+.appointment-buttons{
+    background: #acacfb;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 0px 10px;
+    margin-top: 5px;
+}
+.appointment-buttons span{}
+.appointment-buttons span a{text-decoration: none;color: #05057c;font-weight: 500;/* border-right: 2px solid #03a9f4; */}
+.appoinment-ratting{}
+.appoinment-ratting p{}
+.appoinment-ratting p span{}
+.appoinment-ratting p span i{}
+
+
+/*---------doctor-details-drop-2---hover------*/
+
+.doctor-details:hover{
+   border-radius: 10px;
+    outline: #4CAF50 solid 3px; 
+}
+
+.doctor-details:hover .drop-box-2{
+   transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+/*-------ambulance service--------*/
+.ambulance-service{
+    position: relative;
+    transition: all 0.3s;
+}
+
+.drop-box-3{
+    width: 60%;
+    text-align: center;
+}
+
+
+.ambulance-service:hover{
+    border-radius: 10px;
+    outline: #4CAF50 solid 3px; 
+}
+
+
+.ambulance-service:hover .drop-box-3{
+   transform: scaleX(1);
+    transform-origin: left;
+}
+
+.drop-box-3 li a:hover{
+
+    color: green!important;
+}
+
+
+/*-----------Book form---------*/
+.book-list{
+    position: relative;
+    transition: all 3s;
+}
+.book-form{
+    position: absolute;
+    top: 34px;
+    width: 156%;
+    left: 71px;
+    background: silver;
+    padding: 29px 10px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.5s;
+    z-index: 1111;
+}
+.book-body{
+    background: #dad9d9;
+    overflow: hidden;
+    padding: 10px;
+}
+.book-form form{}
+.book-form form input{
+    width: 100%;
+}
+.book-form form p{
+    display: flex;
+    width: 100%;
+}
+.book-form form p span{}
+.book-form form button{
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: right;
+    padding: 10px 0px;
+}
+.book-form form button a{}
+.book-form form .confirm{
+    width: 50%;
+    background: #631663;
+    color: white;
+    padding: 5px 0px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+/*---------book for hover effect--------*/
+.book-list:hover{
+        border-radius: 10px;
+    outline: #4CAF50 solid 3px; 
+}
+
+.book-list:hover .book-form{
+        transform: scaleY(1);
+    transform-origin: top;
+}
+
+/*-------service-hour-drop-box-------*/
+.service-hour{
+    position: relative;
+    transition: all 0.3s;
+}
+.service-hour-drop-box{
+    position: absolute;
+    top: 100%;left: 0;
+    background: #631663;
+    width: 100%;
+    border-radius: 10px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.5s;
+}
+.service-hour-drop-box li{
+    position: relative;
+    transition: all 0.3s;
+    
+}
+.service-hour-drop-box li a{
+    color: white;
+}
+.service-hour-drop-box li a span{}
+
+/*-------service-hour-drop-box---Hover----*/
+.service-hour:hover{
+    outline: #4CAF50 solid 3px; 
+}
+
+.service-hour:hover .service-hour-drop-box{
+     transform: scaleY(1);
+    transform-origin: top;
+}
+
+
+
+
+
+/*-------service-hour-drop-box-2------*/
+
+.service-hour-drop-box-2{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s;
+}
+.service-hour-drop-box-2 li{}
+.service-hour-drop-box-2 li span{}
+
+/*-------hover effect---service-hour-dropbox-*/
+
+.service-hour-drop-box li:hover{
+    outline: #4CAF50 solid 3px; 
+}
+
+.service-hour-drop-box li:hover .service-hour-drop-box-2{
+     transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+#ui-datepicker-div{
+    background: gainsboro;
+    padding: 10px 20px;
+}
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    border: 1px solid #b9b9b9;
+    padding: 5px;
+}
+
+
+.doctor-list{}
+.doctor-btn{}
+
+
+
+

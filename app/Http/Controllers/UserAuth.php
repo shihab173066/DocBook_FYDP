@@ -14,7 +14,7 @@ use Illuminate\Http\Request;
 
 class UserAuth extends Controller
 {
-    function userLogin(Request $request){
+    public function userLogin(Request $request){
         $data = $request->input();
         
         $validated = $request->validate([
@@ -29,7 +29,7 @@ class UserAuth extends Controller
             $d = Doctor::where('email', $data['email'])->value('password');
             if(Hash::check($data['password'], $d)){
                 $request->session()->put('doctor', $data['email']);
-                    return redirect('home');
+                    return redirect('/doctorhome');
 
             }else{
                 $errors = 'Invalid Login';
@@ -114,7 +114,20 @@ class UserAuth extends Controller
         }
     }
 
-    function userRegister(Request $request){
+    function random_username($string) {
+        $code = "";
+        //$ind = 0;
+        $str = str_split($string);
+        foreach($str as $x){
+        //$ind += 1;
+            $code = $code.ord($x);
+            //echo $ind;
+        }
+        $username = substr($code, 0, 4) + substr($code, -1, 4) + substr(time(), 0, 5) + substr(mt_rand(), 0, 3);
+        return $username;
+    }
+
+    public function userRegister(Request $request){
 
         $data = $request->input();
 
@@ -145,8 +158,11 @@ class UserAuth extends Controller
             $imageName = time().'.'.$request->propic->extension();  
             $request->propic->move(public_path('patient_propics'), $imageName);
 
+            $full = $request->fname.$request->lname;
+            $id = $this->random_username($full);
 
             Patient::insert([
+                'userid' => $id,
                 'email' => $request->email,
                 'fname' => $request->fname,
                 'lname' => $request->lname,
@@ -170,6 +186,15 @@ class UserAuth extends Controller
                 'email' => 'required|email|unique:doctors',
                 'password' => 'required|max:255',
                 'fname' => 'required|max:255',
+                'homeaddress' => 'required|max:255',
+                'chamberaddress' => 'required|max:255',
+                'hospital' => 'required|max:255',
+                'nidno' => 'required|max:255',
+                'medcollege' => 'required|max:255',
+                'gradyear' => 'required|integer',
+                'licenseno' => 'required|integer',
+                'experience' => 'required|integer',
+                'degree' => 'required|max:255',
                 'lname' => 'required|max:255',
                 'propic' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:11048',
                 'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:11',
@@ -192,6 +217,16 @@ class UserAuth extends Controller
             Doctor::insert([
                 'email' => $request->email,
                  'fname' => $request->fname,
+                 'homeaddress' => $request->homeaddress,
+                 'chamberaddress' => $request->chamberaddress,
+                 'hospital' => $request->hospital,
+                 'nidno' => $request->nidno,
+                 'medcollege' => $request->medcollege,
+                 'gradyear' => $request->gradyear,
+                 'licenseno' => $request->licenseno,
+                 'experience' => $request->experience,
+                 'degree' => $request->degree,
+
                 'lname' => $request->lname,
                 'propic' => "doctor_propics/".$imageName,
                 'phone' => $request->phone,
@@ -210,6 +245,16 @@ class UserAuth extends Controller
             $validated = $request->validate([
                 'email' => 'required|email|unique:specialist_doctors',
                 'fname' => 'required|max:255',
+                'homeaddress' => 'required|max:255',
+                'chamberaddress' => 'required|max:255',
+                'hospital' => 'required|max:255',
+                'nidno' => 'required|max:255',
+                'medcollege' => 'required|max:255',
+                'gradyear' => 'required|integer',
+                'licenseno' => 'required|integer',
+                'experience' => 'required|integer',
+                'degree' => 'required|max:255',
+                'field' => 'required|max:255',
                 'lname' => 'required|max:255',
                 'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:11',
                 'propic' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:11048',
@@ -232,6 +277,16 @@ class UserAuth extends Controller
                 'email' => $request->email,
                 'fname' => $request->fname,
                 'lname' => $request->lname,
+                'homeaddress' => $request->homeaddress,
+                 'chamberaddress' => $request->chamberaddress,
+                 'hospital' => $request->hospital,
+                 'nidno' => $request->nidno,
+                 'medcollege' => $request->medcollege,
+                 'gradyear' => $request->gradyear,
+                 'licenseno' => $request->licenseno,
+                 'experience' => $request->experience,
+                 'degree' => $request->degree,
+                 'field' => $request->field,
                 'propic' => "specialist_propics/".$imageName,
                 'phone' => $request->phone,
                 'password' => Hash::make($request->password),

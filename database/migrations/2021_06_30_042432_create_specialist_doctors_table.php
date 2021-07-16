@@ -22,6 +22,16 @@ class CreateSpecialistDoctorsTable extends Migration
             $table->string('phone');
             $table->string('propic');
             $table->string('password');
+            $table->string('homeaddress');
+            $table->string('chamberaddress');
+            $table->string('hospital');
+            $table->string('nidno');
+            $table->string('medcollege');
+            $table->string('gradyear');
+            $table->string('licenseno');
+            $table->integer('experience');
+            $table->string('degree');
+            $table->string('field');
             $table->integer('age');
             $table->string('gender');
             $table->timestamp('created_at');

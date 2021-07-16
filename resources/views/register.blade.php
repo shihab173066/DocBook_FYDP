@@ -15,10 +15,12 @@
         
         if(user == "doctor"){
             $("#blood").hide();
+            $('#spec_div').hide();
             $("#email").show();
             $("#fname").show();
             $('#lname').show();
             $('#phone').show();
+            $('#doc_div').show();
             $("#password").show();
             $("#name").show();
             $("#gender").show();
@@ -28,6 +30,8 @@
             $("#email").show();
             $("#fname").show();
             $('#lname').show();
+            $('#doc_div').hide();
+            $('#spec_div').hide();
             $('#phone').show();
             $("#password").show();
             $("#name").show();
@@ -36,6 +40,8 @@
 
         }else if(user == "specialist"){
             $("#blood").hide();
+            $('#doc_div').show();
+            $('#spec_div').show();
             $("#email").show();
             $("#password").show();
             $("#fname").show();
@@ -51,7 +57,8 @@
             $("#fname").hide();
             $('#lname').hide();
             $('#phone').hide();
-
+            $('#doc_div').hide();
+            $('#spec_div').hide();
             $("#blood").hide();
             $("#name").hide();
             $("#age").hide();
@@ -66,10 +73,12 @@
         var user = $(this).children("option:selected").val();
         if(user == "doctor"){
             $("#blood").hide();
+            $('#spec_div').hide();
             $("#email").show();
             $("#fname").show();
             $('#lname').show();
             $('#phone').show();
+            $('#doc_div').show();
             $("#password").show();
             $("#name").show();
             $("#gender").show();
@@ -79,6 +88,8 @@
             $("#email").show();
             $("#fname").show();
             $('#lname').show();
+            $('#doc_div').hide();
+            $('#spec_div').hide();
             $('#phone').show();
             $("#password").show();
             $("#name").show();
@@ -87,11 +98,13 @@
 
         }else if(user == "specialist"){
             $("#blood").hide();
+            $('#doc_div').show();
+            $('#spec_div').show();
             $("#email").show();
+            $("#password").show();
             $("#fname").show();
             $('#lname').show();
             $('#phone').show();
-            $("#password").show();
             $("#name").show();
             $("#gender").show();
             $("#age").show();
@@ -102,7 +115,8 @@
             $("#fname").hide();
             $('#lname').hide();
             $('#phone').hide();
-
+            $('#doc_div').hide();
+            $('#spec_div').hide();
             $("#blood").hide();
             $("#name").hide();
             $("#age").hide();
@@ -141,7 +155,34 @@
                 </div>
 
       <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
-      <input type="number" name="age" id="age" class="fadein second" placeholder="Age">
+      <div class="container" name="doc_div" id="doc_div">
+      <label>Home Address</label>
+      <input type="text" id="homeaddress" class="fadeIn third" name="homeaddress" placeholder="">
+      <label>Chamber Address</label>
+      <input type="text" id="chamberaddress" class="fadeIn third" name="chamberaddress" placeholder="">
+      <label>Hospital Name</label>
+      <input type="text" id="hospital" class="fadeIn third" name="hospital" placeholder="">
+      <label>NID Number: </label>
+      <input type="text" id="nidno" class="fadeIn third" name="nidno" placeholder="">
+      <label>Medical College: </label>
+      <input type="text" id="medcollege" class="fadeIn third" name="medcollege" placeholder="">
+      <label>Graduation Year: </label>
+      <input type="number" id="gradyear" class="fadeIn third" name="gradyear" placeholder="">
+      <label>Medical License Number: </label>
+      <input type="text" id="licenseno" class="fadeIn third" name="licenseno" placeholder="">
+      <label>Experience: </label>
+      <input type="number" id="experience" class="fadeIn third" name="experience" placeholder="">
+      <label>Degree Acomplishments: </label>
+      <input type="text" id="degree" class="fadeIn third" name="degree" placeholder=""><br>
+      <div name="spec_div" id="spec_div">
+      <label>Medical Field</label>
+      <input type="text" id="field" class="fadeIn third" name="field" placeholder="">
+      </div>
+      
+      </div><br>
+      <label>Age: </label>
+      <input type="number" name="age" id="age" class="fadein second" placeholder="Age"><br>
+      <label>Gender: </label>
       <select name="gender" id="gender" class="gender">
         <option value="male">Male</option>
         <option value="female">Female</option>

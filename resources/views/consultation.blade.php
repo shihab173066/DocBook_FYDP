@@ -534,7 +534,8 @@
 
 
 <!--------------section--2---------->
-
+<form action="post_issue" method="POST" enctype="multipart/form-data">
+  @csrf
 <div class="container-fluid p-0">
     <div class="patient-post-wrap">
         <div class="container">
@@ -574,6 +575,7 @@
                        </div>
                    </div>   
                 </div>
+               
                  <div class="col-md-6">
               <div class="patient-post-middle">
                 <select class="form-select" name="posttype" id="posttype">
@@ -581,7 +583,6 @@
                     <option>Post With Name</option>
                     
                 </select><br>
-        <form action="">
                       <div class="problem-type-select">
                       
                       <div class="problem-type">
@@ -625,7 +626,7 @@
                          
                           <div class="form-floating">
                             
-  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+  <textarea class="form-control" maxlength = "1000" placeholder="Details.." name="details" id="details" style="height: 200px"></textarea>
   
 </div>
                       
@@ -639,11 +640,35 @@
       <div class="file-upload">
           <div class="mb-3">
 <!--  <label for="formFile" class="form-label">Default file input example</label>-->
-  <input class="form-control" type="file" id="formFile">
+  <label>Upload Image:</label>
+  <input class="form-control" name="post_img" type="file" id="post_img"> <br> <br>
+  <label>Upload PDF:</label>
+  <input class="form-control" name="pdf" type="file" id="pdf"> <br>
 </div>
+
+<input type="hidden" class='form-control' name='email' id="email" value={{session('patient')}}>
+
+
+<!--  <label for="formFile" class="form-label">Default file input example</label>-->
+
+
       
       </div>
-      
+      @if ($errors->any())
+      <div class="alert alert-danger">
+                <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+    
+      @if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>
+    @endif
       <div class="post-btn">
           <input type="submit" value="Post">
       </div>

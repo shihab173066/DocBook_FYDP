@@ -21,6 +21,16 @@ class CreateDoctorsTable extends Migration
             $table->string('lname');
             $table->string('propic');
             $table->string('password');
+            $table->string('homeaddress');
+            $table->string('chamberaddress');
+            $table->string('hospital');
+            $table->string('nidno');
+            $table->string('medcollege');
+            $table->string('gradyear');
+            $table->string('licenseno');
+            $table->integer('experience');
+            $table->string('degree');
+
             $table->integer('age');
             $table->string('gender');
             $table->string('phone');

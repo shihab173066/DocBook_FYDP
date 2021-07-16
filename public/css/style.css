@@ -16,7 +16,47 @@
     border-radius: 0px 29px 0px 0px;
     z-index: 1;
 }
+.card {
+    
+    background-color: #6cdde0;
+    
+}
+.checkmark {
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 30px;
+    width: 20px;
+    border-bottom: 7px solid #78b13f;
+    border-right: 7px solid #78b13f;
+    background-color: lightgreen;
+  }
+.box {
+    height: 20px;
+    display:inline-block;
+    vertical-align:middle;
+    width: 20px;
+    background-color: lightgreen;
+    border: 2px solid darkgreen;
 
+  }
+  .red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: lightgreen;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    width: relative;
+  }
 .logo_sec{
     float:left;
     margin-left: 10px;
